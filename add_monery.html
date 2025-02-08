@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="./assets/payoo.png" type="image/x-icon">
+          <link rel="stylesheet" href="./style/style.css">
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+          <script src="https://cdn.tailwindcss.com"></script>
+          <title>Add Money</title>
+</head>
+<body>
+
+          <header class="head_line">
+                    <p>Add Money</p>
+          </header>
+
+          <header>
+                    <div class="navbar bg-base-100">
+                              <div class="flex-1">
+                                        <div class="stats shadow">
+                                                  <div class="stat">
+                                                    <div class="stat-title">
+                                                            <img class="logout_img" src="./assets/balance.png" alt="">
+                                                    </div>
+                                                    <div class="stat-value">$ <span id="money" >89400</span></div>
+                                                    <div class="stat-desc">Available Balance</div>
+                                                  </div>
+                                                </div>
+                              </div>
+                              
+                                <div class="dropdown dropdown-end">
+                                        
+                                                  <button type="submit" class="btn">
+                                                            <img class="logout_img" src="./assets/logout.png" alt="">
+                                                            Log out</button>
+                                  <ul
+                                    tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                    <li>
+                                      <a class="justify-between" href="./index.html">
+                                        Profile
+                                        <span class="badge">New</span>
+                                      </a>
+                                    </li>
+                                    <li><a>Settings</a></li>
+                                    <li><a>Logout</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+          </header>
+
+          <div class="add_money_section flex justify-center py-10">
+                    
+                    <div class="mockup-phone">
+                              <div class="camera"></div>
+                              <div class="display ">
+                                        <div class="artboard artboard-demo phone-1">
+                                                <!-- add money -->
+                                                <div class="hero bg-base-200 min-h-screen">
+                                                          <div class="hero-content flex-col lg:flex-row-reverse">
+                                                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                                              <form class="card-body">
+                                                                <div class="form-control">
+                                                                  <label class="label">
+                                                                    <span class="label-text font-bold">Select Bank</span>
+                                                                    
+                                                                  </label>
+                                                                  <!-- <input id="input_phonnumber" type="text" placeholder="Select Bank Name" class="input input-bordered" required /> -->
+                                                                  <select id="bank_name" class="select w-full max-w-xs">
+                                                                      <option disabled selected>Bangladesh Bank :</option>
+                                                                      <option>Sonali Bank</option>
+                                                                      <option>Rupali Bank</option>
+                                                                      <option>Janata Bank</option>
+                                                                      <option>Islami Bank</option>
+                                                                    </select>
+                                                                  
+                                                                </div>
+                                                                <div class="form-control">
+                                                                  <label class="label">
+                                                                    <span id="bank_ac" class="label-text font-bold">Bank Account Number : </span>
+                                                                  </label>
+                                                                  <input id="input_pin" type="text" autocomplete="off" placeholder="Enter account Number" class="input input-bordered" required />
+                                                                  <span id="amount" class="label-text font-bold">Add Amount: </span>
+                                                                  <label class="label">
+                                                                      
+                                                                      <input id="input_pin" type="text" autocomplete="off" placeholder="Enter account Number" class="input input-bordered" required />
+                                                                  </label>
+                                                                </div>
+                                                                <div class="form-control mt-6">
+                                                                  <button id="btn_money" class="btn btn-primary font-bold">Add Money</button>
+                                                                </div>
+                                                              </form>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                        </div>
+                                      </div>
+                            </div>
+          </div>
+
+          
+          <script src="./JS/script.js"></script>
+</body>
+
+</html>
