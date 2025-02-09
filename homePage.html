@@ -10,32 +10,40 @@
           <title>Payoo Home Page</title>
 </head>
 <body>
-          <header>
-                    <div class="navbar bg-base-100">
-                              <div class="flex-1">
+  <header>
+            <section class="head_line">
+              <div class="flex justify-center">
+                        <img class="head-img" src="./assets/payoo.png" alt="">
+              <p id="gift-title" class="head-title">Bank of Rangpur</p>
+              
+              </div>
+            </section>
+            <div class="divider"><p id="" class="all-features">All Features Here</p></div>
+                    <div class="navbar ">
+                              <div class="flex-1 mx-10 ">
                                         <div class="stats shadow">
-                                                  <div class="stat">
+                                                  <div class="stat ">
                                                     <div class="stat-title">
-                                                            <img class="logout_img" src="./assets/balance.png" alt="">
+                                                            <img class="logout_img" src="./assets/salary.png" alt="">
                                                     </div>
-                                                    <div class="stat-value">$89,400</div>
+                                                    <div class="stat-value">$ <span id="account-balance">8500</span></div>
                                                     <div class="stat-desc">Available Balance</div>
                                                   </div>
                                                 </div>
                               </div>
                               
-                                <div class="dropdown dropdown-end">
+                                <div class="dropdown dropdown-end ">
                                         
-                                                  <button type="submit" class="btn">
+                                                  <button type="submit" class="btn ">
                                                             <img class="logout_img" src="./assets/logout.png" alt="">
                                                             Log out</button>
                                   <ul
                                     tabindex="0"
                                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                     <li>
-                                      <a class="justify-between" href="./index.html">
+                                      <a class="justify-between" href="./homePage.html">
                                         Profile
-                                        <span class="badge">New</span>
+                                        
                                       </a>
                                     </li>
                                     <li><a>Settings</a></li>
@@ -45,17 +53,13 @@
                               </div>
                             </div>
           </header>
-          <div class="divider"></div>
 
-          <div>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button>
-          </div>
-
-
-          <div class="welcome_section">
+          
+          
+          
+          <div class="welcome_section lg:flex-col(6) justify-between md:flex-col(3) ">
             <div class="card-container">
-              <div class="card bg-[#FFF2F2] text-neutral-content w-60 border-4">
+              <div class="card bg-[#6499E9] text-neutral-content w-60 border-4">
                 <div class="card-body items-center text-center">
                   <img class="logout_img" src="./assets/money (1).png" alt="" >
                   <div class="card-actions justify-end">
@@ -67,16 +71,18 @@
                 </div>
               </div>
   
-              <div class="card bg-[#FFF2F2] text-neutral-content w-60 border-4">
+              <div class="card bg-[#6499E9] text-neutral-content w-60 border-4">
                 <div class="card-body items-center text-center">
                   <img class="logout_img" src="./assets/cash-payment.png" alt="" >
                   <div class="card-actions justify-end">
-                    <button class="btn btn-outline  border-l">Cash Out</button>
+                    <button class="btn btn-outline  border-l">
+                      <a href="./cashOut.html">Cash Out</a>
+                    </button>
                   </div>
                 </div>
               </div>
   
-              <div class="card bg-[#FFF2F2] text-neutral-content w-60 border-4">
+              <div class="card bg-[#6499E9] text-neutral-content w-60 border-4">
                 <div class="card-body items-center text-center">
                   <img class="logout_img" src="./assets/transaction.png" alt="" >
                   <div class="card-actions justify-end">
@@ -89,16 +95,18 @@
             
 
             <div class="card-container">
-              <div class="card bg-[#FFF2F2] text-neutral-content w-60 border-4">
+              <div class="card bg-[#6499E9] text-neutral-content w-60 border-4">
                 <div class="card-body items-center text-center">
                   <img class="logout_img" src="./assets/gifts.png" alt="" >
                   <div class="card-actions justify-end">
-                    <button class="btn btn-outline  border-l">Gifts</button>
+                    <button class="btn btn-outline  border-l">
+                      <a href="./bonus.html">Gifts</a>
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <div class="card bg-[#FFF2F2] text-neutral-content w-60 border-4">
+              <div class="card bg-[#6499E9] text-neutral-content w-60 border-4">
                 <div class="card-body items-center text-center">
                   <img class="logout_img" src="./assets/balance.png" alt="" >
                   <div class="card-actions justify-end">
@@ -107,7 +115,7 @@
                 </div>
               </div>
 
-              <div class="card bg-[#FFF2F2] text-neutral-content w-60 border-4">
+              <div class="card bg-[#6499E9] text-neutral-content w-60 border-4">
                 <div class="card-body items-center text-center">
                   <img class="logout_img" src="./assets/cash-payment.png" alt="" >
                   <div class="card-actions justify-end">
@@ -117,10 +125,15 @@
               </div>
             </div>
           </div>
+          
 
+          <script src="./JS/features.js"></script>
+          <script src="./JS/bonus.js"></script>
+          <script src="./JS/cashOut.js"></script>
+          <script src="./JS/add_money.js"></script>
+          <script src="./JS/script.js"></script>
 
-
-          <script src="./JS/script.js"></script>        
+                 
 </body>
 
 </html>

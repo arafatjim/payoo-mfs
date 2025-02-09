@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="./assets/payoo.png" type="image/x-icon">
+          <link rel="stylesheet" href="./style/style.css">
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+          <script src="https://cdn.tailwindcss.com"></script>
+          <title>Bonus</title>
+</head>
+<body>
+          <header class="head_line">
+                    <div class="flex justify-center">
+                              <img class="head-img" src="./assets/gifts.png" alt="">
+                    <p id="gift-title" class="head-title">Gift</p>
+                    </div>
+                  </header>
+                  <section>
+                    <div class="navbar bg-base-100">
+                              <div class="flex-1 mx-10 ">
+                                        <div class="stats shadow">
+                                                  <div class="stat ">
+                                                    <div class="stat-title">
+                                                            <img class="logout_img" src="./assets/salary.png" alt="">
+                                                    </div>
+                                                    <div class="stat-value">$ <span id="account-balance">8500</span></div>
+                                                    <div class="stat-desc">Available Balance</div>
+                                                  </div>
+                                                </div>
+                              </div>
+                              
+                                <div class="dropdown dropdown-end ">
+                                        
+                                                  <button type="submit" class="btn ">
+                                                            <img class="logout_img" src="./assets/logout.png" alt="">
+                                                            Log out</button>
+                                  <ul
+                                    tabindex="0"
+                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                    <li>
+                                      <a class="justify-between" href="./homePage.html">
+                                        Profile
+                                      </a>
+                                    </li>
+                                    <li><a>Settings</a></li>
+                                    <li><a>Logout</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                  </section>
+
+<!-- btn-section -->
+                  <div class="flex justify-center gap-11 pt-10">
+                    <button id="btn-show-bonus" class="btn btn-outline btn-secondary">Bonus</button>
+                    <button id="btn-cash-out-show" class="btn btn-outline btn-secondary">Cash Out</button>
+                  </div>
+          <!-- cash out section -->
+           <main class="flex justify-around">
+                    <div class="bonus-section">
+                              <div class="card bg-base-100  w-full max-w-sm shrink-0 shadow-2xl">
+                                        <form id="get-bonus-form" class="card-body">
+                                                  <label class="label">
+                                                            <span class="label-text">Get Bonus : </span>
+                                                          </label>
+                                                  <div class="form-control">
+                                                    <label class="label">
+                                                      <span class="label-text">Use Bonus Coupon :</span>
+                                                    </label>
+                                                    <input id="coupon" type="text" placeholder="Enter Bonus Coupon" class="input input-bordered" required />
+                            
+                                                    
+
+                                                  <div class="form-control mt-6 ">
+                                                    <button id="btn-bonus" class="btn btn-primary">Get Bonus</button>
+                                                  </div>
+                                                </form>
+                                </div>
+                    </div>  
+                    
+                    <div class="cash-out-section">
+                              
+                                        <div class="card bg-base-100  w-full max-w-sm shrink-0 shadow-2xl">
+                                                  <form id="cash-out-show" class="card-body hidden">
+                                                    <div class="form-control">
+                                                      <label class="label">
+                                                        <span id="agent-number" class="label-text">Agent Number :</span>
+                                                      </label>
+                                                      <input type="text" placeholder="Enter agent number" class="input input-bordered" required />
+                                                    </div>
+                                                    <div class="form-control">
+                                                      <label class="label">
+                                                        <span class="label-text">Amount :</span>
+                                                      </label>
+                                                      <input id="withdraw-amount" type="text" placeholder="Enter cash out amount" class="input input-bordered" required />
+                              
+                                                      <div class="form-control">
+                                                            <label class="label">
+                                                              <span  class="label-text">Pin Number :</span>
+                                                            </label>
+                                                            <input id="input_pin" type="password" placeholder="Enter pin number" class="input input-bordered" required />
+                                                          </div>
+                              
+                                                      <label class="label">
+                                                        <a href="./index.html" class="label-text-alt link link-hover">Forgot PIN?</a>
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-control mt-6 ">
+                                                      <button id="btn-withdraw" class="btn btn-primary">Withdraw Amount</button>
+                                                    </div>
+                                                  </form>
+                                                </div>
+                    </div>
+          </main>
+
+          <script src="./JS/features.js"></script>
+          <script src="./JS/bonus.js"></script>
+          <script src="./JS/cashOut.js"></script>
+
+          
+</body>
+</html>

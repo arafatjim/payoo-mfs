@@ -12,18 +12,21 @@
 <body>
 
           <header class="head_line">
-                    <p>Add Money</p>
+            <img class="head-img" src="./assets/payoo.png" alt="">
+            <p class="head-title">Add Money</p> 
           </header>
 
           <header>
                     <div class="navbar bg-base-100">
+                      
                               <div class="flex-1">
+                                
                                         <div class="stats shadow">
                                                   <div class="stat">
                                                     <div class="stat-title">
                                                             <img class="logout_img" src="./assets/balance.png" alt="">
                                                     </div>
-                                                    <div class="stat-value">$ <span id="money" >89400</span></div>
+                                                    <div class="stat-value">$ <span id="account-balance" >8500</span></div>
                                                     <div class="stat-desc">Available Balance</div>
                                                   </div>
                                                 </div>
@@ -53,12 +56,12 @@
 
           <div class="add_money_section flex justify-center py-10">
                     
-                    <div class="mockup-phone">
-                              <div class="camera"></div>
-                              <div class="display ">
-                                        <div class="artboard artboard-demo phone-1">
+                   
+                              
+                             
+                                        
                                                 <!-- add money -->
-                                                <div class="hero bg-base-200 min-h-screen">
+                                                <div class="hero bg-base-200 min-l-screen">
                                                           <div class="hero-content flex-col lg:flex-row-reverse">
                                                             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                                                               <form class="card-body">
@@ -67,9 +70,10 @@
                                                                     <span class="label-text font-bold">Select Bank</span>
                                                                     
                                                                   </label>
-                                                                  <!-- <input id="input_phonnumber" type="text" placeholder="Select Bank Name" class="input input-bordered" required /> -->
-                                                                  <select id="bank_name" class="select w-full max-w-xs">
-                                                                      <option disabled selected>Bangladesh Bank :</option>
+                                                                  
+                                                                  <select id="bank_name" class="select w-full max-w-xs bg-blue-300">
+                                                                      <option disabled selected>Bank Name</option>
+                                                                      <option>Bangladesh Bank</option>
                                                                       <option>Sonali Bank</option>
                                                                       <option>Rupali Bank</option>
                                                                       <option>Janata Bank</option>
@@ -79,29 +83,37 @@
                                                                 </div>
                                                                 <div class="form-control">
                                                                   <label class="label">
-                                                                    <span id="bank_ac" class="label-text font-bold">Bank Account Number : </span>
+                                                                    <span  class="label-text font-bold">Bank Account Number : </span>
                                                                   </label>
-                                                                  <input id="input_pin" type="text" autocomplete="off" placeholder="Enter account Number" class="input input-bordered" required />
-                                                                  <span id="amount" class="label-text font-bold">Add Amount: </span>
+                                                                  <input id="bank_account-number" type="text" autocomplete="off" placeholder="Enter account Number" class="input input-bordered" required />
+                                                                  
+                                                                  <label class="label">
+                                                                    <span  class="label-text font-bold">4 Digit Pin : </span>
+                                                                  </label>
+                                                                  <input id="input_pin" type="password" autocomplete="off" placeholder="Enter pin Number" class="input input-bordered" required />
+
+
+                                                                  <span  class="label-text font-bold">Add Amount: </span>
                                                                   <label class="label">
                                                                       
-                                                                      <input id="input_pin" type="text" autocomplete="off" placeholder="Enter account Number" class="input input-bordered" required />
+                                                                      <input id="input-amount" type="text" autocomplete="off" placeholder="Enter amount" class="input input-bordered" required />
                                                                   </label>
                                                                 </div>
                                                                 <div class="form-control mt-6">
-                                                                  <button id="btn_money" class="btn btn-primary font-bold">Add Money</button>
+                                                                  <button id="btn-add-money" class="btn btn-primary font-bold">Add Money</button>
                                                                 </div>
                                                               </form>
                                                             </div>
                                                           </div>
                                                         </div>
                                         </div>
-                                      </div>
-                            </div>
+                                      
+                            
           </div>
 
           
-          <script src="./JS/script.js"></script>
+         <script src="./JS/add_money.js"></script>
+         <script src="./JS/script.js"></script>
 </body>
 
 </html>

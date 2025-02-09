@@ -6,9 +6,17 @@
           font-weight: 900;
           color: rgb(49, 68, 84);
           font-family: initial;
+          
+}
+body{
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: #edecec;
 }
 main{
-          background-image: image('./assets/14877-NPZB1H.jpg');
+          padding: 40px 0 ;
+          
 }
 .logout_img{
           width: 50px;
@@ -25,4 +33,43 @@ main{
           flex-wrap: wrap;
           justify-content:space-around;
           padding: 20px;
+}
+label{
+          font-size: large;
+          font-weight: 600;
+}
+.head_line{
+          display: flex;
+          justify-content: center;
+          padding: 50px 0 20px 0;
+          font-size: larger;
+          font-weight: 900;
+          color: rgb(49, 68, 84);
+          font-family: initial;
+          background-color: #A3D8FF;
+          
+}
+.head-img{
+          width: 100px;
+          height: 85px;
+          padding: -10px;
+          
+}
+.head-title{
+          padding: 10px 0 20px 0;
+          font-size: 40px;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: #C7253E;
+          padding: 0 50px 0 0;
+}
+.all-features{
+          display: flex;
+          justify-content: center;
+          padding: 20px 10px 20px 10px;
+          font-size: 30px;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: #8b3f3f;
+
 }
